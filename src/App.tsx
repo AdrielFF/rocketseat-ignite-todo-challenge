@@ -83,7 +83,8 @@ function App() {
               Tarefas criadas <span>{allTasks}</span>
             </strong>
             <strong className={styles.completedTasks}>
-              Concluídas <span>{`${tasksDone} de ${allTasks}`}</span>
+              Concluídas{" "}
+              <span>{allTasks > 0 ? `${tasksDone} de ${allTasks}` : "0"}</span>
             </strong>
           </header>
           <ul className={styles.toDoList}>
